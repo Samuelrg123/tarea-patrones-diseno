@@ -1,4 +1,4 @@
-package Punto_3;
+package problema_3;
 
 public class confirmar_Pizza {
 }
