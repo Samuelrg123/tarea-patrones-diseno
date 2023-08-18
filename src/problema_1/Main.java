@@ -11,6 +11,5 @@ public class Main {
         order.processOrder(strategy);
         strategy = new ProcessingFood();
         order.processOrder(strategy);
-
     }
 }
