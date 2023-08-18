@@ -36,15 +36,20 @@ public class pizza {
         ingredientes.add(ingrediente);
     }
 
+    private static final Map<String,Double> tamanoPizza = new HashMap<>();
+    static{
+        tamanoPizza.put("pequeña",5.0);
+        tamanoPizza.put("mediana",7.0);
+
+    }
 
     public double calcularCosto(){
-
         double baseCosto = 0.0;
-        double pizzaTamano=0.0;
+
         double ingredientCost = ingredientes.size() * 1.5;
         double quesoCost = extraQueso ? 2.0 : 0.0;
 
-        return baseCosto + pizzaTamano + ingredientCost + quesoCost;
+        return baseCosto + ingredientCost + quesoCost;
 
     }
     public void pizzaPrevia(){
