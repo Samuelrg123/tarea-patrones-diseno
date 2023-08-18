@@ -1,7 +1,7 @@
 package problema_1;
 
-public class ProcessingClothing extends GeneralProcessingStep implements OrderProcessingStrategy{
-    public void specificStep() {
+public class ProcessingClothing extends GeneralProcessingStep implements OrderProcessingStrategy {
+    public void specificClothingStep() {
         System.out.println("Paso unico de ordenes de Ropa antes de la notificacion");
     }
 
@@ -9,7 +9,7 @@ public class ProcessingClothing extends GeneralProcessingStep implements OrderPr
     public final void orderProcessingStrategy() {
         verifyInventory();
         billing();
-        specificStep();
+        specificClothingStep();
         notifyCustomer();
 
     }
