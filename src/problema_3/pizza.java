@@ -45,7 +45,7 @@ public class pizza {
 
     public double calcularCosto(){
         double baseCosto = 0.0;
-
+        double tamanoMasa = tamanoPizza.get("pequeña");
         double ingredientCost = ingredientes.size() * 1.5;
         double quesoCost = extraQueso ? 2.0 : 0.0;
 
